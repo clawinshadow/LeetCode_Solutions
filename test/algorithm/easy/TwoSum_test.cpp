@@ -5,6 +5,18 @@ using namespace algorithm::easy;
 
 TEST(Algorithm_Easy, TwoSum)
 {
-    vector<int> numbers{2, 7, 5, 11};
-    EXPECT_EQ(TwoSum(numbers, 16)[0], 3);
+    vector<int> numbers;
+    for (int i = 0; i <= 10000; i++)
+        numbers.push_back(i);
+    
+    EXPECT_EQ(TwoSum(numbers, 19999)[0], 10000);
+}
+
+TEST(Algorithm_Easy, TwoSum_weak)
+{
+    vector<int> numbers;
+    for (int i = 0; i <= 10000; i++)
+        numbers.push_back(i);
+    
+    EXPECT_EQ(TwoSum_weak(numbers, 19999)[0], 9999);
 }

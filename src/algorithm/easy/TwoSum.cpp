@@ -23,6 +23,8 @@ namespace algorithm {
 namespace easy{
 
 //brute force
+// Time complexity: O(n*n)
+// Space complexity: O(1)
 vector<int> TwoSum_weak(vector<int>& nums, int target) {
     vector<int> result{-1, -1};
     if (nums.size() < 2)
@@ -44,6 +46,8 @@ vector<int> TwoSum_weak(vector<int>& nums, int target) {
 }
 
 //use hashmap one-pass
+// Time complexity: O(n)
+// Space complexity: O(n)
 vector<int> TwoSum(vector<int>& nums, int target) {
     vector<int> result{-1, -1};
     if (nums.size() < 2)
