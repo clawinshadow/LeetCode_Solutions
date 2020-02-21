@@ -8,8 +8,8 @@ using namespace std;
 namespace algorithm {
 namespace easy{
 
-vector<int> TwoSum_weak(vector<int>& nums, int target);
-vector<int> TwoSum(vector<int>& nums, int target);
+vector<int> TwoSum_Weak(vector<int>& nums, int target);
+vector<int> TwoSum_Solution(vector<int>& nums, int target);
 
 }
 }

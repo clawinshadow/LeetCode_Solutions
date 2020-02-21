@@ -14,7 +14,7 @@ For the purpose of this problem, assume that your function returns 0 when the re
 #include <limits>
 #include <vector>
 #include <cmath>
-#include "ReverseInteger.h"
+#include "reverse_integer.h"
 
 #define INT_MAX std::numeric_limits<int>::max()
 #define INT_MIN std::numeric_limits<int>::min()
@@ -32,7 +32,7 @@ bool valid_int(long x)
 
 //这个虽然完成了功能，但实际上是不符合要求的
 //使用了long类型, vector 等
-int ReverseInteger_weak(int x)
+int ReverseInteger_Weak(int x)
 {
     int abs_x = std::abs((long)x);
     if (!valid_int(abs_x))
@@ -70,7 +70,7 @@ int ReverseInteger_weak(int x)
 }
 
 //elegant
-int ReverseInteger_solution(int x)
+int ReverseInteger_Solution(int x)
 {
     int rev = 0;
     while (x != 0)

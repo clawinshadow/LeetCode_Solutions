@@ -4,8 +4,8 @@
 namespace algorithm {
 namespace easy{
 
-int ReverseInteger_weak(int x);
-int ReverseInteger_solution(int x);
+int ReverseInteger_Weak(int x);
+int ReverseInteger_Solution(int x);
 
 } //namespace easy
 } //namespace algorithm
